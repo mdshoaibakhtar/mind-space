@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.burger{
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+}
+
+.line{
+    background: rgb(188, 255, 5);
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+}
+
+
+.heading{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.navbar{
+    transition: all 0.4s ease-out;
+    height: 150px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+}
+.navbar li{
+    list-style: none;
+    padding: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: chartreuse;
+    margin: 10px 20px;
+}
+
+
+.home{
+    background: url('./image/yellow.jpg')no-repeat center center;
+    height: 750px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    border: 1px solid red;
+    /* background: rgb(182, 132, 132); */
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+.card p{
+    font-size: 1.4rem;
+    padding: 10px 10px;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+.service{
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.service img:hover{
+    width: 295px;
+    height: 265px;
+}
+
+.item{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 20px 10px;
+}
+.itemm{
+    display: flex;
+    flex-direction:row;
+    margin: 20px 10px;
+}
+.item p{
+    font-size: 1.4rem;
+    margin: 10px;
+}
+.itemm p{
+    font-size: 1.4rem;
+    margin: 10px;
+}
+.item img{
+    width: 300px;
+    height: 270px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 5px 2px;
+}
+.itemm img{
+    width: 300px;
+    height: 270px;
+    border-radius: 15px;
+    margin: 5px 2px;
+
+}
+
+
+
+.form{
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+input{
+      width: 500px;
+      font-size: 1.4rem;
+      padding: 2px;
+}
+
+.form #addtxt{
+    margin-top: 10px;
+    height: 100px;
+    padding: 0;
+}
+
+.form button{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 24px;
+    background: none;
+    cursor: pointer;
+    color: green;
+    font-size: 1.2rem;
+}
+.form button:hover{
+    margin-top: 10px;
+    background: rgb(107, 107, 107);
+    color: black;
+}
+
+.form select{
+    width: 510px;
+    font-size: 1.4rem;
+}
+
+.footer{
+    background: #000;
+    color: red;
+    text-align: center;
+    height: 20px;
+    padding: 10px 0;
+}
+
+
+.ht-nav{
+    height: 0;
+    opacity: 0;
+}
+
+
+/* Code For Responsiveness */
+@media (max-width:950px) {
+    .item p{
+        font-size: 1.3rem;
+    }
+    .itemm p{
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media (max-width:700px) {
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 10px;
+    }
+    .itemm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 10px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:530px)
+{
+    .form input{
+        width: 300px;
+    }
+    #your-class{
+        width: 300px;
+    }
+    
+}
+
+@media (max-width:380px) {
+     .heading h1{
+         font-size: 1.7rem;
+     } 
+}
